@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: nepal
+    database: econ
+    schema: public
+    tables:
+      - name: nepal_economic_raw
+        description: "Raw Nepal economic indicators from World Bank API"

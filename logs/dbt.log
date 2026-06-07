@@ -1,0 +1,75 @@
+[0m15:18:18.331092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022336F6FC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022336FB0690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022336FEA6D0>]}
+
+
+============================== 15:18:18.344090 | 438be5b5-ac6b-4498-9a7c-09a6b9706a53 ==============================
+[0m15:18:18.344090 [info ] [MainThread]: Running with dbt=1.12.0-b1
+[0m15:18:18.349094 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\USER\\.dbt', 'invocation_command': 'dbt init nepal-econ', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m15:18:27.496050 [debug] [MainThread]: Starter project path: C:\Users\USER\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\include\starter_project
+[0m15:18:27.550146 [info ] [MainThread]: Setting up your profile.
+[0m15:19:18.982365 [info ] [MainThread]: Profile nepal_dbt written to C:\Users\USER\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m15:19:18.990794 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m15:19:18.993237 [info ] [MainThread]: dbt version: 1.12.0-b1
+[0m15:19:18.997081 [info ] [MainThread]: python version: 3.11.9
+[0m15:19:18.998606 [info ] [MainThread]: python path: C:\Users\USER\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe
+[0m15:19:18.999679 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m15:19:19.073555 [info ] [MainThread]: Using profiles dir at C:\Users\USER\.dbt
+[0m15:19:19.075570 [info ] [MainThread]: Using profiles.yml file at C:\Users\USER\.dbt\profiles.yml
+[0m15:19:19.077582 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\USER\nepal-economic-pipeline\nepal_dbt\dbt_project.yml
+[0m15:19:19.080582 [info ] [MainThread]: adapter type: postgres
+[0m15:19:19.082574 [info ] [MainThread]: adapter version: 1.10.0
+[0m15:19:19.367369 [info ] [MainThread]: Configuration:
+[0m15:19:19.368358 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:19:19.369351 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:19:19.371353 [info ] [MainThread]: Required dependencies:
+[0m15:19:19.372360 [debug] [MainThread]: Executing "git --help"
+[0m15:19:19.498533 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:19:19.499533 [debug] [MainThread]: STDERR: "b''"
+[0m15:19:19.500534 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:19:19.502538 [info ] [MainThread]: Connection:
+[0m15:19:19.503535 [info ] [MainThread]:   host: localhost
+[0m15:19:19.504535 [info ] [MainThread]:   port: 5432
+[0m15:19:19.505534 [info ] [MainThread]:   user: postgres
+[0m15:19:19.507537 [info ] [MainThread]:   database: econ
+[0m15:19:19.508536 [info ] [MainThread]:   schema: analytics
+[0m15:19:19.509537 [info ] [MainThread]:   connect_timeout: 10
+[0m15:19:19.510537 [info ] [MainThread]:   role: None
+[0m15:19:19.512539 [info ] [MainThread]:   search_path: None
+[0m15:19:19.513537 [info ] [MainThread]:   keepalives_idle: 0
+[0m15:19:19.515544 [info ] [MainThread]:   sslmode: None
+[0m15:19:19.517538 [info ] [MainThread]:   sslcert: None
+[0m15:19:19.519537 [info ] [MainThread]:   sslkey: None
+[0m15:19:19.520537 [info ] [MainThread]:   sslrootcert: None
+[0m15:19:19.521536 [info ] [MainThread]:   application_name: dbt
+[0m15:19:19.522538 [info ] [MainThread]:   retries: 1
+[0m15:19:19.524540 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m15:19:20.494123 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m15:19:20.918935 [debug] [MainThread]: Using postgres connection "debug"
+[0m15:19:20.919937 [debug] [MainThread]: On debug: select 1 as id
+[0m15:19:20.920937 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:19:21.070878 [debug] [MainThread]: SQL status: SELECT 1 in 0.150 seconds
+[0m15:19:21.072885 [debug] [MainThread]: On debug: Close
+[0m15:19:21.073879 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:19:21.074881 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:19:21.075880 [info ] [MainThread]: Your new dbt project "nepal_dbt" was created!
+Initialized new project in C:\Users\USER\nepal-economic-pipeline\nepal_dbt\nepal_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:19:21.078893 [debug] [MainThread]: Command `dbt init` succeeded at 15:19:21.078893 after 63.21 seconds
+[0m15:19:21.079893 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:19:21.079893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022336FEBD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022337FA80D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022337FA8190>]}
+[0m15:19:21.081892 [debug] [MainThread]: Flushing usage events
+[0m15:19:22.504505 [debug] [MainThread]: An error was encountered while trying to flush usage events

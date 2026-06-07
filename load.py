@@ -50,7 +50,7 @@ def insert_data(df):
                         """,(
                             row["country"], row["year"], row.get("gdp_usd"), row.get("inflation_pct"), row.get("population"), row.get("exports_pct_gdp"),row.get("imports_pct_gdp"), row.get("unemployment_pct"), row["ingested_at"]))
             if cur.rowcount>0:
-                inserted+1
+                inserted+=1
         conn.commit()
         cur.close()
         conn.close()
