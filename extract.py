@@ -38,14 +38,11 @@ def fetch_indicator(indicator_code, indicator_name, retries=3):
                         })
             print(f"Fetched {len(records)} records for {indicator_name}")
             return records
-        except requests.exceptions.Timeout:
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
             print(f"Timeout on {indicator_name}, attempt {attempt+1}/{retries}. Retrying...")
             time.sleep(5)  
-        except Exception as e:
-            print(f"Error fetching {indicator_name}: {e}")
-            return []
-    print(f"Failed to fetch {indicator_name} after {retries} attempts")
-    return []
+    raise RuntimeError(f"Failed to fetch {indicator_name} after {retries} attempts")
+
 
 def extract_all():
     all_records = []
